@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- Declare document type and version of HTML -->
+
+<html lang="en">
+<!-- Root HTML element with language set to English -->
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- Character encoding set to UTF-8 for proper text rendering -->
+
+    <title>Pokemon Chart</title>
+    <!-- Title shown in browser tab -->
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!-- Load D3.js library (version 7) from official CDN -->
+
+    <style>
+        /* Styles for the entire page */
+
+        body {
+            font-family: sans-serif;  /* Use a clean sans-serif font */
+            position: relative;       /* Position relative to allow absolute children */
+            margin: 0;                /* Remove default margin */
+        }
+
+        svg {
+            width: 1200px;            /* Fixed width for the SVG container */
+            height: 1000px;           /* Fixed height for the SVG container */
+            display: block;           /* Make SVG behave like a block element */
+            margin: 0 auto;           /* Center SVG horizontally */
+        }
+
+        #selectedBars {
+            position: absolute;       /* Position fixed relative to nearest relative ancestor (body) */
+            top: 20px;                /* 20 pixels from top */
+            right: 20px;              /* 20 pixels from right */
+            width: 200px;             /* Fixed width */
+            padding: 10px;            /* Inner spacing */
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+            border: 1px solid #ccc;   /* Light gray border */
+            font-size: 14px;          /* Text size */
+            white-space: pre-line;    /* Preserve line breaks in text */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle drop shadow */
+            z-index: 10;              /* Stack on top of other elements */
+        }
+    </style>
+</head>
+
+<body>
+    <svg></svg>
+    <!-- SVG element where D3.js will render the chart -->
+
+    <script src="main.js"></script>
+    <!-- Load the external JavaScript file containing visualization code -->
+</body>
+
+</html>
